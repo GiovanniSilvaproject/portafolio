@@ -1,39 +1,318 @@
-<section id="contact" class="contact">
-    <div class="container">
-        <h2 class="section-title">Contáctame</h2>
-        <div class="contact-content">
-            <div class="contact-info">
-                <h3>¡Hablemos!</h3>
-                <p>¿Tienes un proyecto en mente? Me encantaría escuchar sobre él.</p>
-                <div class="contact-details">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <span>giovannidavidsilva@gmail.com</span>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giovanni - Desarrollador de Software</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <span>Giovanni.</span>
+                <div class="logo-dot"></div>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Inicio</a></li>
+                    <li><a href="#services" class="nav-link">Servicios</a></li>
+                    <li><a href="#resume" class="nav-link">Resumen</a></li>
+                    <li><a href="#work" class="nav-link">Trabajo</a></li>
+                    <li><a href="#contact" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+            <button class="cta-button">Contrátame</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <span class="role">Desarrollador de Software</span>
+                    <h1 class="greeting">Hola, soy</h1>
+                    <h2 class="name">Giovanni</h2>
+                    <p class="description">
+                        Me especializo en crear experiencias digitales elegantes y soy experto en 
+                        varios lenguajes de programación y tecnologías.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="download-cv">
+                            DESCARGAR CV
+                            <i class="fas fa-download"></i>
+                        </button>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/geovanny.silva.56863?locale=es_LA" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/thegiovaprojectu.u" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="https://github.com/GiovanniSilvaproject" class="social-icon"><i class="fab fa-github"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                        </div>
                     </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <span>+591 71252439</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>La Paz, Bolivia</span>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="img/profile-photo.jpeg" alt="Giovanni">
+                        <div class="decorative-circle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
                     </div>
                 </div>
             </div>
-            <!-- Formulario integrado con Formspree -->
-            <form action="https://formspree.io/f/mnqevnwg" method="POST" class="contact-form">
-                <div class="form-group">
-                    <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="statistics">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number">3</span>
+                    <span class="stat-label">Años de experiencia</span>
                 </div>
-                <div class="form-group">
-                    <input type="email" id="email" name="email" placeholder="Tu email" required>
+                <div class="stat-item">
+                    <span class="stat-number">5</span>
+                    <span class="stat-label">Proyectos completados</span>
                 </div>
-                <div class="form-group">
-                    <input type="text" id="subject" name="subject" placeholder="Asunto">
+                <div class="stat-item">
+                    <span class="stat-number">6</span>
+                    <span class="stat-label">Tecnologías dominadas</span>
                 </div>
-                <div class="form-group">
-                    <textarea id="message" name="message" placeholder="Tu mensaje" rows="5" required></textarea>
+                <div class="stat-item">
+                    <span class="stat-number">300</span>
+                    <span class="stat-label">Commits de código</span>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Mis Servicios</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Desarrollo Web</h3>
+                    <p>Creo sitios web modernos y responsivos utilizando las últimas tecnologías.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Desarrollo Móvil</h3>
+                    <p>Aplicaciones móviles nativas y multiplataforma para iOS y Android.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Backend Development</h3>
+                    <p>APIs robustas y sistemas de base de datos escalables.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Diseños intuitivos y experiencias de usuario excepcionales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="work" class="projects">
+        <div class="container">
+            <h2 class="section-title">Mis Proyectos</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/imagen boliviacontent.png" alt="Proyecto 1">
+                    </div>
+                    <div class="project-content">
+                        <h3>E-commerce Platform</h3>
+                        <p>Plataforma completa de comercio electrónico con React y Node.js</p>
+                        <div class="project-tech">
+                            <span>php</span>
+                            <span>visual.code</span>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Código</a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/imagen parqueo.png" alt="Proyecto 2">
+                    </div>
+                    <div class="project-content">
+                        <h3>Task Manager App</h3>
+                        <p>Aplicación de gestión de tareas con Vue.js y Firebase</p>
+                        <div class="project-tech">
+                            <span>Vue.js</span>
+                            <span>Firebase</span>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Código</a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/imagen rolisuoermercado.png" alt="Proyecto 3">
+                    </div>
+                    <div class="project-content">
+                        <h3>Weather Dashboard</h3>
+                        <p>Dashboard del clima con JavaScript vanilla y APIs externas</p>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Código</a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Testimonios</h2>
+            <div class="testimonials-slider">
+                <div class="testimonial active">
+                    <div class="testimonial-content">
+                        <p>"Giovanni es un desarrollador excepcional. Su atención al detalle y capacidad para resolver problemas complejos son impresionantes."</p>
+                        <div class="testimonial-author">
+                            <div class="author-icon">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4>Juan Pérez</h4>
+                                <span>CEO, TechStart</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Trabajar con Giovanni fue una experiencia increíble. Entregó el proyecto a tiempo y superó todas las expectativas."</p>
+                        <div class="testimonial-author">
+                            <div class="author-icon">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4>María García</h4>
+                                <span>Directora de Producto, InnovateLab</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Giovanni tiene un talento natural para crear soluciones elegantes y eficientes. Definitivamente lo recomendaría."</p>
+                        <div class="testimonial-author">
+                            <div class="author-icon">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4>Carlos López</h4>
+                                <span>Fundador, DigitalCraft</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-dots">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+                <span class="dot" data-slide="2"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contáctame</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>¡Hablemos!</h3>
+                    <p>¿Tienes un proyecto en mente? Me encantaría escuchar sobre él.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>giovannidavidsilva@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+591 71252439</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>La Paz, Bolivia</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Formulario conectado a Formspree -->
+                <form action="https://formspree.io/f/mnqevnwg" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Tu email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Asunto">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Tu mensaje" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span>Giovanni.</span>
+                    <div class="logo-dot"></div>
+                </div>
+                <p>&copy; 2023 Giovanni. Todos los derechos reservados.</p>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/geovanny.silva.56863?locale=es_LA"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/thegiovaprojectu.u"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/GiovanniSilvaproject"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
                 <button type="submit" class="submit-btn">Enviar Mensaje</button>
             </form>
         </div>
